@@ -1,0 +1,322 @@
+body
+    margin: 0
+    padding: 0
+    width: 100%
+    font-family: sans-serif
+    height: 100vh
+header
+    width: 100%
+    
+    .titre
+        justify-content: center
+        h1
+            text-align: center
+            font-weight: bold
+    .sticky
+        position: fixed
+        top: 0
+        left: 0
+        align-items: center
+        z-index: 10
+        transition: 0.6s
+        padding: 40px 100px
+        background-color: white
+        display: flex
+        .bg-black
+            background-color: black
+            color: white
+        .bg-white
+            background-color: white
+            color: black    
+       
+
+        
+    .image-logo
+            display: none
+            @media screen and (max-width: 680px)
+                display: none
+
+
+    .sticky .image-logo
+            display: flex
+            justify-content: center
+            @media screen and (max-width: 680px)
+                display: none
+    .bg-black
+        background-color: black
+        color: white
+        @media screen and (max-width: 680px)
+            background-color: black
+            color: white
+    .bg-white
+        background-color: white
+        color: black
+        @media screen and (max-width: 680px)
+            background-color: white
+            color: black            
+    nav
+        height: 80px
+        width: 100%
+        justify-content: center
+        display: flex
+        .bg-black
+            background-color: black
+            color: white
+        .bg-white
+            background-color: white
+            color: black
+        
+        ul
+            margin: auto
+           
+            // @media screen and (max-width: 680px)  
+            li
+                display: inline-block
+                margin: 0 10px
+                line-height: 50px
+               
+                .bg-black
+                    background-color: white
+                // @media screen and (max-width: 680px)
+                a
+                    
+                    color: black
+                    font-size: 15px
+                    text-transform: uppercase
+                    text-decoration-line: none
+                    // @media screen and (max-width: 68px) 
+                    
+                &:hover
+                    background-color: none
+                    color: black
+
+            .twooButons
+                line-height: 50px
+                // display: flex
+                margin: 0 10px
+                // @media screen and (max-width: 680px) 
+                .butt-jour
+                    padding: 10px
+                    margin: 2px
+                    background-color: $colorWhite
+                    border: solid grey 1px
+                    border-radius: 2px
+                    cursor: pointer
+
+                .butt-nuit
+                    padding: 10px
+                    margin: 2px
+                    background-color: black
+                    border-radius: 2px
+                    cursor: pointer
+            .connexion-btn        
+                .but-connect
+                    height: 35px
+                    color: white
+                    background-color: grey
+                    border: none
+                    text-transform: uppercase
+                    transform: translateY(10px)
+        .menuBtn
+            color: grey
+            background-color: white
+            font-size: 30px
+            line-height: 80px
+            cursor: pointer
+            margin-right: 40px
+            float: left
+            display: none
+            @media screen and (max-width: 680px)
+                display: flex
+                justify-content: end
+
+        .close-nav
+            font-size: 30px
+            color: black
+            cursor: pointer
+            line-height: 80px
+            float: left
+            display: none
+            @media screen and (max-width: 680px)
+                display: flex
+                justify-content: end
+
+    @media screen and (max-width: 680px)
+        .Header-nav .ul-nav
+                    
+                    margin-right: 0 40px
+                    position: absolute
+                    width: 100%
+                    left: 0
+                    top: 0
+                    transition: all 2s
+                    z-index: 1
+                    background-color: white
+                    display: none
+                    
+                    .bg-black
+                        background-color: black
+                        color: white 
+                    .bg-white
+                        background-color: white
+                        color: black    
+        .Header-nav .ul-nav.active
+            left: 0%
+            display: block
+            transition: all 3s   
+        .Header-nav .ul-nav li 
+            
+            display: block
+            left: 0%
+        .header-nav .ul-nav a
+            color: black
+            font-size: 15px
+        .twooButons
+            margin-top: 45px
+            
+    .popup
+        position: absolute
+        top: 10
+        left: 50%
+        transform: translateX(-100%)
+        width: 380px
+        padding: 20px 30px
+        background-color: white
+        border-radius: 10px
+        z-index: 1
+        position: fixed
+        display: none
+        @media screen and (max-width: 680px)
+            position: absolute
+            left: 100%
+            width: 100%
+    .active
+        display: block
+        .close-btn
+            position: absolute
+            top: 10px
+            right: 10px
+            width: 15px
+            background-color: $colorRed
+            color: white
+            text-align: center
+            line-height:  15px
+            border-radius: 2px
+            padding: 15px
+        .form h2
+            margin: 10px 0px 20px
+            font-size: 25px
+            font-weight: bold
+            .all-btn
+                display: flex
+                flex: 1
+                .first-bout
+                    padding: 0 80px
+                .two-bout
+    .popup .form .form-element
+                    margin: 15px 0px
+                    display: block
+    .popup  .form   .form-element
+                        label
+                            font-size: 14px
+                            display: block
+    .popup  .form   .form-element   #email,
+    .popup  .form   .form-element   #password
+        margin-top: 5px
+        display: block
+        width: 100%
+        padding: 10px
+        outline: none
+        border: 1px solid black
+        border-radius: 5px
+    .popup  .form   .icones      
+                        justify-content: center
+                        align-items: center
+                        display: flex
+                        font-size: 30px
+                        margin: 50px
+                                 
+                                               
+    .banniere
+        display: flex
+        transform: translateY(100px)
+        background-color: #D8D4D1
+        padding-left: 10%
+        width: 100%
+        
+        .banniere-1
+            flex-direction: column
+            @media screen and (max-width: 620px)
+                display: inline-block
+                flex-direction: columns
+                width: 25%
+                text-align: center
+
+            .shop-couleur
+                color: $colorRed
+                transform: translateY(15px)
+                font-size: 50px
+            img[alt="logo"]
+                color: black
+                height: 100px
+                width: 100%
+                font-weight: bold
+                @media screen and (max-width: 620px)
+                    width: 250%
+            p
+                @media screen and (max-width: 620px)
+                    text-align: center
+
+            .butt-sale
+                color: white
+                background-color: $colorRed
+                border: none
+        .img-tshirt
+            img[alt="product-tshitr-white-700x500"]
+                @media screen and (max-width: 620px)
+                    flex-direction: column
+                    display: inline-block
+                    width: 100%
+
+
+                        
+
+                     
+                    
+
+
+
+                
+                
+                
+        
+
+
+
+
+
+
+                    
+
+
+
+
+            
+
+
+    
+   
+            
+            
+            
+            
+
+   
+            
+                   
+
+
+
+
+
+
