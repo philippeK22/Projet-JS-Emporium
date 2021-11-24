@@ -17324,9 +17324,6 @@ header nav .bg-white {
   background-color: white;
   color: black;
 }
-header nav ul {
-  margin: auto;
-}
 header nav ul li {
   display: inline-block;
   margin: 0 10px;
@@ -17442,7 +17439,7 @@ header nav .close-nav {
 header .popup {
   position: absolute;
   top: 10;
-  left: 50%;
+  left: 65%;
   transform: translateX(-100%);
   width: 380px;
   padding: 20px 30px;
@@ -17670,9 +17667,8 @@ section .container .row .col-first .hover-image {
 }
 section .container .row .col-first .hover-image:hover .position-butt {
   display: flex;
-  justify-content: center;
-  transition: all 1s ease;
-  transition-duration: 1s;
+  margin-bottom: 2px;
+  transition: all 0.8s ease;
 }
 section .container .row .col-first .hover-image:hover .position-butt:hover {
   bottom: 0px;
@@ -17685,6 +17681,7 @@ section .container .row .col-first .hover-image .position-butt {
   display: none;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 section .container .row .col-first .hover-image .position-butt .details-butt {
   width: 38%;
