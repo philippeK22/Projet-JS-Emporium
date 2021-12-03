@@ -4,8 +4,10 @@ body
     width: 100%
     font-family: sans-serif
     height: 100vh
+  
 header
     width: 100%
+    
     
     .titre
         justify-content: center
@@ -129,6 +131,9 @@ header
             @media screen and (max-width: 680px)
                 display: flex
                 justify-content: end
+        .active
+            display: inline-block
+    
 
         .close-nav
             font-size: 30px
@@ -139,7 +144,10 @@ header
             display: none
             @media screen and (max-width: 680px)
                 display: flex
-                justify-content: end
+                float: right
+        .active
+            display: block
+
 
     @media screen and (max-width: 680px)
         .Header-nav .ul-nav
@@ -186,12 +194,14 @@ header
         z-index: 1
         position: fixed
         display: none
+
         @media screen and (max-width: 680px)
             position: absolute
             left: 100%
             width: 100%
     .active
         display: block
+      
         .close-btn
             position: absolute
             top: 10px
@@ -216,6 +226,11 @@ header
     .popup .form .form-element
                     margin: 15px 0px
                     display: block
+    .popup  .form .inscription2
+                        display: none
+    .popup  .form       .active
+                            display: inline-block
+                                         
     .popup  .form   .form-element
                         label
                             font-size: 14px
@@ -236,13 +251,16 @@ header
                         font-size: 30px
                         margin: 50px
                                  
-                                               
+                                        
     .banniere
         display: flex
         transform: translateY(100px)
         background-color: #D8D4D1
         padding-left: 10%
         width: 100%
+    
+        
+    
         
         .banniere-1
             flex-direction: column

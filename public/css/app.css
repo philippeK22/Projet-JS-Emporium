@@ -17385,6 +17385,9 @@ header nav .menuBtn {
     justify-content: end;
   }
 }
+header nav .active {
+  display: inline-block;
+}
 header nav .close-nav {
   font-size: 30px;
   color: black;
@@ -17396,8 +17399,11 @@ header nav .close-nav {
 @media screen and (max-width: 680px) {
   header nav .close-nav {
     display: flex;
-    justify-content: end;
+    float: right;
   }
+}
+header nav .active {
+  display: block;
 }
 @media screen and (max-width: 680px) {
   header .Header-nav .ul-nav {
@@ -17486,6 +17492,12 @@ header .active .form h2 .all-btn .first-bout, header .active .form .h2 .all-btn 
 header .popup .form .form-element {
   margin: 15px 0px;
   display: block;
+}
+header .popup .form .inscription2 {
+  display: none;
+}
+header .popup .form .active {
+  display: inline-block;
 }
 header .popup .form .form-element label {
   font-size: 14px;
@@ -18097,6 +18109,7 @@ section:nth-of-type(4) .container .rowe .sale-bag {
 }
 section:nth-of-type(4) .container .rowe .col-five {
   display: none;
+  transition: 0.5s;
 }
 section:nth-of-type(4) .container .rowe .col-six {
   display: none;
@@ -18110,6 +18123,9 @@ section:nth-of-type(4) .container .rowe .col-height {
 section:nth-of-type(4) .container .rowe .col-nine {
   display: none;
 }
+section:nth-of-type(4) .container .rowe .active {
+  display: inline-block;
+}
 section:nth-of-type(4) .bouton-vide {
   display: flex;
   justify-content: center;
@@ -18122,9 +18138,7 @@ section:nth-of-type(4) .active-all {
   height: 15px;
   border: solid black 1px;
   margin: 10px;
-}
-section:nth-of-type(4) .active {
-  opacity: 1 !important;
+  animation: card 1s ease-in-out;
 }
 section:nth-of-type(4) .all {
   border-radius: 50%;

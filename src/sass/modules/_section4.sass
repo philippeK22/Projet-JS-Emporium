@@ -9,6 +9,7 @@ section
         .container    
             .rowe
                 .img-4
+                   
                     .hover-image
                         margin: 10px
                 h5
@@ -46,6 +47,8 @@ section
                     border: none
                 .col-five
                     display: none
+                    transition: 0.5s
+
                 .col-six
                     display: none
                 .col-seven
@@ -54,6 +57,10 @@ section
                     display: none
                 .col-nine
                     display: none                    
+                .active
+                    
+                    display: inline-block       
+            
         .bouton-vide
             display: flex
             justify-content: center
@@ -61,16 +68,14 @@ section
             transform: translateY(50px)
             // height: 15px
             
-            
         .active-all
             background-color: blue 
             border-radius: 50%
             height: 15px
             border: solid black 1px
-            margin: 10px                              
+            margin: 10px 
+            animation: card 1s ease-in-out                             
         
-        .active
-            opacity: 1!important       
             
         .all
             border-radius: 50%
