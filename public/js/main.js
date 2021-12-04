@@ -1,18 +1,29 @@
 // navbar 
 
 let navUl = document.querySelector("ul");
-let menuBtn = document.querySelector(".menuBtn");
+let menuBtn = document.querySelector(".fas");
+console.log(menuBtn);
 let btnNav = document.querySelector(".close-nav");
+let ulNav = document.querySelector(".ul-nav")
+
 
 
 
 menuBtn.addEventListener("click",()=>{
+    menuBtn.classList.add("active")
     navUl.classList.toggle("active");
-    btnNav.classList.remove("active")
+    buttonNuit.addEventListener("click",()=>{
+        // nav.style.backgroundColor="black"
+        navUl.classList.toggle("bg-black")
+    })
+    buttonJour.addEventListener("click",()=>{
+        navUl.classList.toggle("bg-white")
+
+    })
    
-})
-btnNav.addEventListener("click",()=>{
-    navUl.classList.remove("active")
+    btnNav.addEventListener("click",()=>{
+        navUl.classList.remove("active")
+    })
 })
 
 
@@ -136,7 +147,7 @@ console.log(btnThree);
 let btnFour = boutonAll[3]
 console.log(btnFour);
 
-let slides = Array.from(document.querySelectorAll(".rowe .card"));
+let slides = Array.from(document.querySelectorAll(" .card"));
 console.log(slides);
 
 let luxSofa = slides[0]
@@ -210,6 +221,8 @@ btnFour.addEventListener("click",()=>{
 
 
 })
+
+
 
 // const imgs = document.querySelectorAll(".rowe img");
 // console.log(imgs);

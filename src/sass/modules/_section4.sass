@@ -8,7 +8,27 @@ section
             font-weight: bold
         .container    
             .rowe
-                .img-4
+                .card
+                    display: none
+                    height: 200px
+                    width: 250px
+                    transition: 0.5s
+                    cursor: pointer
+                    @media screen and (max-width: 620px)
+                        display: none
+                       
+                        
+                        
+                    
+                .active
+                    display: inline-block
+                    @media screen and (max-width: 620px)
+                        display: flex
+                        height: 200px
+                        width: 100px
+
+                   
+
                    
                     .hover-image
                         margin: 10px
@@ -48,18 +68,45 @@ section
                 .col-five
                     display: none
                     transition: 0.5s
-
+                    @media screen and (max-width: 620px)
+                        height: 60px
+                        width: 60px
+                  
+                .active
+                    display: inline-block
+                   
+                    @media screen and (max-width: 620px)
+                        display: block
+                        
                 .col-six
                     display: none
+                .active
+                    display: inline-block
+                    @media screen and (max-width: 620px)
+                        display: block 
+                       
                 .col-seven
                     display: none
+
+                .active 
+                    display: inline-block
+                    @media screen and (max-width: 620px)
+                        display: block
+                        
                 .col-height
                     display: none
-                .col-nine
-                    display: none                    
                 .active
+                    display: inline-block
+                    @media screen and (max-width: 620px)
+                        display: block
+
+                .col-nine
+                    display: none  
+                .active 
+                    display: inline-block
+                    @media screen and (max-width: 620px)
+                        display: block                    
                     
-                    display: inline-block       
             
         .bouton-vide
             display: flex
@@ -67,6 +114,9 @@ section
             align-items: center
             transform: translateY(50px)
             // height: 15px
+            margin-top: 5%
+            @media screen and (max-width: 620px)
+                margin-top: 30%
             
         .active-all
             background-color: blue 
@@ -74,7 +124,8 @@ section
             height: 15px
             border: solid black 1px
             margin: 10px 
-            animation: card 1s ease-in-out                             
+            animation: card 1s ease-in-out
+            transition-duration: 1s                             
         
             
         .all

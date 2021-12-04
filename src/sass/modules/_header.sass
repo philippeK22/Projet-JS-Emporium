@@ -24,6 +24,8 @@ header
         padding: 40px 100px
         background-color: white
         display: flex
+        @media screen and (max-width: 680px)
+            position: relative
         .bg-black
             background-color: black
             color: white
@@ -119,7 +121,7 @@ header
                     border: none
                     text-transform: uppercase
                     transform: translateY(10px)
-        .menuBtn
+        .fas
             color: grey
             background-color: white
             font-size: 30px
@@ -128,11 +130,15 @@ header
             margin-right: 40px
             float: left
             display: none
-            @media screen and (max-width: 680px)
-                display: flex
-                justify-content: end
+            @media screen and (max-width: 620px)
+                display: block
+                height: 30px
+                float: left
         .active
             display: inline-block
+            @media screen and (max-width: 680px)
+                display: inline-block
+                
     
 
         .close-nav
@@ -142,8 +148,8 @@ header
             line-height: 80px
             float: left
             display: none
-            @media screen and (max-width: 680px)
-                display: flex
+            @media screen and (max-width: 620px)
+                display: block
                 float: right
         .active
             display: block
@@ -171,7 +177,13 @@ header
         .Header-nav .ul-nav.active
             left: 0%
             display: block
-            transition: all 3s   
+            transition: all 3s
+        .bg-black
+            background-color: black
+            color: white
+        .bg-white
+            background-color: white
+            color: black       
         .Header-nav .ul-nav li 
             
             display: block
@@ -249,19 +261,13 @@ header
                         align-items: center
                         display: flex
                         font-size: 30px
-                        margin: 50px
-                                 
-                                        
+                        margin: 50px                                 
     .banniere
         display: flex
         transform: translateY(100px)
         background-color: #D8D4D1
         padding-left: 10%
         width: 100%
-    
-        
-    
-        
         .banniere-1
             flex-direction: column
             @media screen and (max-width: 620px)
@@ -284,6 +290,9 @@ header
             p
                 @media screen and (max-width: 620px)
                     text-align: center
+                    letter-spacing: 2px
+                    margin-left: 30%
+                    display: flex
 
             .butt-sale
                 color: white

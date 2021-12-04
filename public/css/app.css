@@ -17265,6 +17265,11 @@ header .sticky {
   background-color: white;
   display: flex;
 }
+@media screen and (max-width: 680px) {
+  header .sticky {
+    position: relative;
+  }
+}
 header .sticky .bg-black {
   background-color: black;
   color: white;
@@ -17369,7 +17374,7 @@ header nav ul .connexion-btn .but-connect {
   text-transform: uppercase;
   transform: translateY(10px);
 }
-header nav .menuBtn {
+header nav .fas {
   color: grey;
   background-color: white;
   font-size: 30px;
@@ -17379,14 +17384,20 @@ header nav .menuBtn {
   float: left;
   display: none;
 }
-@media screen and (max-width: 680px) {
-  header nav .menuBtn {
-    display: flex;
-    justify-content: end;
+@media screen and (max-width: 620px) {
+  header nav .fas {
+    display: block;
+    height: 30px;
+    float: left;
   }
 }
 header nav .active {
   display: inline-block;
+}
+@media screen and (max-width: 680px) {
+  header nav .active {
+    display: inline-block;
+  }
 }
 header nav .close-nav {
   font-size: 30px;
@@ -17396,9 +17407,9 @@ header nav .close-nav {
   float: left;
   display: none;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 620px) {
   header nav .close-nav {
-    display: flex;
+    display: block;
     float: right;
   }
 }
@@ -17429,6 +17440,14 @@ header nav .active {
     left: 0%;
     display: block;
     transition: all 3s;
+  }
+  header .bg-black {
+    background-color: black;
+    color: white;
+  }
+  header .bg-white {
+    background-color: white;
+    color: black;
   }
   header .Header-nav .ul-nav li {
     display: block;
@@ -17557,6 +17576,9 @@ header .banniere .banniere-1 img[alt=logo] {
 @media screen and (max-width: 620px) {
   header .banniere .banniere-1 p {
     text-align: center;
+    letter-spacing: 2px;
+    margin-left: 30%;
+    display: flex;
   }
 }
 header .banniere .banniere-1 .butt-sale {
@@ -17603,6 +17625,8 @@ header .banniere .banniere-1 .butt-sale {
 @media screen and (max-width: 620px) {
   .section-one .living {
     margin: 0;
+    height: 250px;
+    width: 100%;
   }
 }
 .section-one .living h3, .section-one .living .h3 {
@@ -17628,6 +17652,8 @@ header .banniere .banniere-1 .butt-sale {
 @media screen and (max-width: 620px) {
   .section-one .sale {
     margin: 0;
+    height: 250px;
+    width: 100%;
   }
 }
 .section-one .sale h3, .section-one .sale .h3 {
@@ -17653,6 +17679,8 @@ header .banniere .banniere-1 .butt-sale {
 @media screen and (max-width: 620px) {
   .section-one .clothes {
     margin: 0;
+    height: 250px;
+    width: 100%;
   }
 }
 .section-one .clothes h3, .section-one .clothes .h3 {
@@ -17967,6 +17995,10 @@ section .col-height .hover-image {
   position: relative;
   width: 100%;
 }
+section .col-height .hover-image .img-modern {
+  height: 200px;
+  width: 200px;
+}
 section .col-height:hover .position-butt {
   display: flex;
   justify-content: center;
@@ -18066,7 +18098,29 @@ section:nth-of-type(4) .titre3 {
   text-align: center;
   font-weight: bold;
 }
-section:nth-of-type(4) .container .rowe .img-4 .hover-image {
+section:nth-of-type(4) .container .rowe .card {
+  display: none;
+  height: 200px;
+  width: 250px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .card {
+    display: none;
+  }
+}
+section:nth-of-type(4) .container .rowe .active {
+  display: inline-block;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .active {
+    display: flex;
+    height: 200px;
+    width: 100px;
+  }
+}
+section:nth-of-type(4) .container .rowe .active .hover-image {
   margin: 10px;
 }
 section:nth-of-type(4) .container .rowe h5, section:nth-of-type(4) .container .rowe .h5 {
@@ -18111,14 +18165,52 @@ section:nth-of-type(4) .container .rowe .col-five {
   display: none;
   transition: 0.5s;
 }
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .col-five {
+    height: 60px;
+    width: 60px;
+  }
+}
+section:nth-of-type(4) .container .rowe .active {
+  display: inline-block;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .active {
+    display: block;
+  }
+}
 section:nth-of-type(4) .container .rowe .col-six {
   display: none;
+}
+section:nth-of-type(4) .container .rowe .active {
+  display: inline-block;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .active {
+    display: block;
+  }
 }
 section:nth-of-type(4) .container .rowe .col-seven {
   display: none;
 }
+section:nth-of-type(4) .container .rowe .active {
+  display: inline-block;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .active {
+    display: block;
+  }
+}
 section:nth-of-type(4) .container .rowe .col-height {
   display: none;
+}
+section:nth-of-type(4) .container .rowe .active {
+  display: inline-block;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .active {
+    display: block;
+  }
 }
 section:nth-of-type(4) .container .rowe .col-nine {
   display: none;
@@ -18126,11 +18218,22 @@ section:nth-of-type(4) .container .rowe .col-nine {
 section:nth-of-type(4) .container .rowe .active {
   display: inline-block;
 }
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .container .rowe .active {
+    display: block;
+  }
+}
 section:nth-of-type(4) .bouton-vide {
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(50px);
+  margin-top: 5%;
+}
+@media screen and (max-width: 620px) {
+  section:nth-of-type(4) .bouton-vide {
+    margin-top: 30%;
+  }
 }
 section:nth-of-type(4) .active-all {
   background-color: blue;
@@ -18139,6 +18242,7 @@ section:nth-of-type(4) .active-all {
   border: solid black 1px;
   margin: 10px;
   animation: card 1s ease-in-out;
+  transition-duration: 1s;
 }
 section:nth-of-type(4) .all {
   border-radius: 50%;
