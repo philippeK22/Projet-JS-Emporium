@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <header class="Header" data-header>
 
         <!-- début header -->
@@ -65,11 +66,12 @@
                 <!-- </ul> -->
             </ul>
 
-            <label class="menuBtn">
+            <div class="menuBtn">
                 <i class="fas fa-bars"></i>
-            </label>
-            
+            </div>
+
         </nav>
+
         <div class="popup">
             <div class="close-btn">X</div>
 
@@ -152,6 +154,7 @@
             </ul>
     </header>
     <!-- fin du header -->
+    <div class="flou"></div>
 
     <!-- section1 -->
 
@@ -275,7 +278,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-4  col-seven">
                     <div class="hover-image">
                         <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="product-modern-sofa"
-                            class=" mt-3 w-75 h-75" >
+                            class=" mt-3 w-75 h-75">
                         <div class="position-butt">
                             <button class="details-butt">details</button>
                             <button class="starts-butt">starts</button>
@@ -330,7 +333,7 @@
     <!-- fin Section3 -->
 
     <!-- début section4 -->
-    <section class="section-four mt-5">
+    <!-- <section class="section-four mt-5">
         <div class="titre3">
             <h2>Hot Fashion Products</h2>
         </div>
@@ -376,28 +379,31 @@
                 <div class="col-sm-12 col-md-6 col-lg-4 card  col-five">
                     <div class="hover-image">
                         <img src="./public/img/products_mini/product-tshitr.jpg" alt="product-tshitr"
-                           style="height: 180px; width: 230px;">
+                            style="height: 180px; width: 230px;">
                     </div>
                     <h5>Minimal T-Shirt</h5>
                     <span class="prix-T">$15.00</span>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 card  col-six ">
                     <div class="hover-image">
-                        <img src="./public/img/products_mini/product-plates.jpg" alt="Plates" style="height: 180px; width: 230px;">
+                        <img src="./public/img/products_mini/product-plates.jpg" alt="Plates"
+                            style="height: 180px; width: 230px;">
                     </div>
                     <h5>Plates set</h5>
                     <span class="prix-plates">$30.00</span>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4  col-seven">
                     <div class="hover-image">
-                        <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="Modern" style="height: 180px; width: 230px;">
+                        <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="Modern"
+                            style="height: 180px; width: 230px;">
                     </div>
                     <h5>Modern Sofa</h5>
                     <span class="prix-sofa">$900.00</span>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 card  col-height">
                     <div class="hover-image">
-                        <img src="./public/img/products_mini/product-bed.jpg" alt="bed" style="height: 180px; width: 230px;">
+                        <img src="./public/img/products_mini/product-bed.jpg" alt="bed"
+                            style="height: 180px; width: 230px;">
                     </div>
                     <h5>Bed Linen</h5>
                     <span class="prix-bed">$79.00</span>
@@ -405,7 +411,8 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 card col-nine">
                     <div class="hover-image">
-                        <img src="./public/img/products_mini/product-shoes.jpg" alt="Shoes" style="height: 180px; width: 230px;">
+                        <img src="./public/img/products_mini/product-shoes.jpg" alt="Shoes"
+                            style="height: 180px; width: 230px;">
                     </div>
                     <h5>Minimal Shoes</h5>
                     <span class="prix-shoes">$60.00</span>
@@ -423,6 +430,114 @@
             <button class="all" data-clic="4"></button>
         </div>
 
+    </section> -->
+
+    <section id="hotFashion">
+        <div>
+            <h2 class="text-center text-dark mt-3 mb-5">Hot fashion products</h2>
+
+        </div>
+        <div class="container">
+            <div class="row d-flex">
+            <div class="img sofa">
+                <div class="beforeImg ">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="sofa" class="w-100">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center ">
+                    <span class="text-dark mt-4">Luxury Sofa</span>
+                    <span class="text-danger">$600.00</span>
+                </div>
+            </div>
+            
+            <div class="img gloves">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="gloves" class="w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <div style="height: 50px; width: 70px;"
+                        class="bg-danger d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
+                        <p class="sale bg-danger text-light p-0 m-0">Sale!</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <span class="text-dark mt-4">Leather Gloves</span>
+                        <span>
+                            <span class="text-secondary text-decoration-line-through">$34.00</span>
+                            <span class="text-danger">$27.00</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="img bowl">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="bowl" class="w-100">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <span class="text-dark mt-4">Colorful Bowl</span>
+                    <span class="text-danger ">$18.00</span>
+                </div>
+            </div>
+
+            <div class="img bags ">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-bag.jpg" alt="sac" class="w-100">
+                </div>
+                <div class="d-flex align-items-center justify-content-center ">
+                    <div style="height: 50px; width: 70px;"
+                        class="bg-danger d-flex align-items-center justify-content-center rounded-pill me-4 mt-4">
+                        <p class="sale bg-danger text-light p-0 m-0">Sale!</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <span class="text-dark mt-4">Women bags</span>
+                        <span>
+                            <span class="text-secondary text-decoration-line-through">$420.00</span>
+                            <span class="text-danger">$350.00</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img tshirt">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="shirt" class="w-100">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center ">
+                    <span class="text-dark mt-4">Minimal T-shirt</span>
+                    <span class="text-danger ">$15.00</span>
+                </div>
+            </div>
+
+            <div class="img plate">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-plates.jpg" alt="plates" class="w-100">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center ">
+                    <span class="text-dark mt-4">Plate Set</span>
+                    <span class="text-danger ">$30.00</span>
+                </div>
+            </div>
+            
+            <div class="img modern">
+                <div class="beforeImg">
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="Sofa" class="w-100">
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center ">
+                    <span class="text-dark mt-4">Modern Sofa</span>
+                    <span class="text-danger ">$900.00</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="divIndicators mt-5">
+            <button class="bg-light myIndicator indic cercleN"></button>
+            <button class="bg-light myIndicator1 indic cercleN"></button>
+            <button class="bg-light myIndicator2 indic cercleN"></button>
+            <button class="bg-light myIndicator3 indic cercleN"></button>
+            <button class="bg-light myIndicator4 indic cercleN"></button>
+            <button class="bg-light myIndicator5 indic cercleN"></button>
+            <button class="bg-light myIndicator6 indic cercleN"></button>
+        </div>
+    </div>
     </section>
     <!-- fin de Section4 -->
 

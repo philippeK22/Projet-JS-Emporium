@@ -74,10 +74,7 @@ buttonJour.addEventListener("click",()=>{
 window.addEventListener("scroll",()=>{
     let navbar = document.querySelector("nav");
     navbar.classList.toggle("sticky",window.scrollY>200);
-    // nav.forEach(el => {
-    //     el.classList.toggle("bg-black",window.scrollY>200)
-        
-    // });
+  
    
     
 })
@@ -89,8 +86,10 @@ let closeBtn = document.querySelector(".close-btn")
 let section = document.querySelector("section-one");
 let banniere = document.querySelector(".banniere");
 let section2 = document.querySelector(".section-two");
+let flou = document.querySelector(".flou")
 console.log(section2);
 let popup = document.querySelector(".popup")
+console.log(popup);
 
 
 
@@ -98,16 +97,19 @@ let popup = document.querySelector(".popup")
 
 buttonConnexion.addEventListener("click",()=>{
     popup.classList.toggle("active")
-    // body.style.filter ="blur(4px)"
-    // popup.style.filter ="blur(0)"
-    
+    document.querySelector("body").classList.toggle("stop-scrolling")
+    flou.style.display="Block"
+
+
 
 })
 
 closeBtn.addEventListener("click",()=>{
     let popup = document.querySelector(".popup")
     popup.classList.remove("active")
-    body.style.filter=""
+    document.querySelector("body").classList.remove("stop-scrolling")
+    flou.style.display="none"
+
 
 })
 
@@ -134,93 +136,154 @@ connect.addEventListener("click",()=>{
 
 
 
+
+
 // carrousel
 
-let boutonAll = Array.from(document.querySelectorAll(".all"));
-console.log(boutonAll);
-let btnOne = boutonAll[0]
-console.log(btnOne);
-let btnTwoo = boutonAll[1]
-console.log(btnTwoo);
-let btnThree = boutonAll[2]
-console.log(btnThree);
-let btnFour = boutonAll[3]
-console.log(btnFour);
+// let boutonAll = Array.from(document.querySelectorAll(".all"));
+// console.log(boutonAll);
+// let btnOne = boutonAll[0]
+// console.log(btnOne);
+// let btnTwoo = boutonAll[1]
+// console.log(btnTwoo);
+// let btnThree = boutonAll[2]
+// console.log(btnThree);
+// let btnFour = boutonAll[3]
+// console.log(btnFour);
 
-let slides = Array.from(document.querySelectorAll(" .card"));
-console.log(slides);
+// let slides = Array.from(document.querySelectorAll(" .card"));
+// console.log(slides);
 
-let luxSofa = slides[0]
-console.log(luxSofa);
-let lgloves = slides[1]
-console.log(lgloves);
-let bowl =slides[2]
-console.log(bowl);
-let bag = slides[3]
-console.log(bag);
-let tshirt = slides[4]
-console.log(tshirt);
-let plates = slides[5]
-console.log(plates);
-let modernSofa = slides[6]
-console.log(modernSofa);
-let bed = slides[7]
-console.log(bed);
-let shoes = slides[8]
-console.log(shoes);
+// let luxSofa = slides[0]
+// console.log(luxSofa);
+// let lgloves = slides[1]
+// console.log(lgloves);
+// let bowl =slides[2]
+// console.log(bowl);
+// let bag = slides[3]
+// console.log(bag);
+// let tshirt = slides[4]
+// console.log(tshirt);
+// let plates = slides[5]
+// console.log(plates);
+// let modernSofa = slides[6]
+// console.log(modernSofa);
+// let bed = slides[7]
+// console.log(bed);
+// let shoes = slides[8]
+// console.log(shoes);
 
-btnOne.addEventListener("click",()=>{
-    luxSofa.classList.remove("active")
-    lgloves.classList.remove("active")
-    bowl.classList.remove("active")
-    bag.classList.remove("active")
-    tshirt.classList.add("active")
-    plates.classList.add("active")
-    modernSofa.classList.add("active")
-    bed.classList.add("active")
-    shoes.classList.add("active")
-    btnOne.classList.add("active")
-    btnTwoo.classList.remove("active")
-    btnThree.classList.remove("active")
-    btnFour.classList.remove("active")
+// btnOne.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     lgloves.classList.remove("active")
+//     bowl.classList.remove("active")
+//     bag.classList.remove("active")
+//     tshirt.classList.add("active")
+//     plates.classList.add("active")
+//     modernSofa.classList.add("active")
+//     bed.classList.add("active")
+//     shoes.classList.add("active")
+//     btnOne.classList.add("active")
+//     btnTwoo.classList.remove("active")
+//     btnThree.classList.remove("active")
+//     btnFour.classList.remove("active")
 
     
-})
+// })
 
-btnTwoo.addEventListener("click",()=>{
-    luxSofa.classList.remove("active")
-    tshirt.classList.add("active")
-    btnOne.classList.remove("active")
-    btnThree.classList.remove('active')
-    btnFour.classList.remove('active')
-    btnTwoo.classList.add('active')
-})
+// btnTwoo.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     tshirt.classList.add("active")
+//     btnOne.classList.remove("active")
+//     btnThree.classList.remove('active')
+//     btnFour.classList.remove('active')
+//     btnTwoo.classList.add('active')
+// })
 
 
-btnThree.addEventListener("click",()=>{
-    luxSofa.classList.remove("active")
-    lgloves.classList.remove("active")
-    plates.classList.add("active")
-    btnThree.classList.add("active")
-    btnOne.classList.remove("active")
-    btnTwoo.classList.remove("active")
-    btnFour.classList.remove("active")
+// btnThree.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     lgloves.classList.remove("active")
+//     plates.classList.add("active")
+//     btnThree.classList.add("active")
+//     btnOne.classList.remove("active")
+//     btnTwoo.classList.remove("active")
+//     btnFour.classList.remove("active")
     
-})
+// })
 
 
-btnFour.addEventListener("click",()=>{
-    luxSofa.classList.remove("active")
-    lgloves.classList.remove("active")
-    bowl.classList.remove("active")
-    modernSofa.classList.add("active")
-    btnThree.classList.remove("active")
-    btnOne.classList.remove("active")
-    btnTwoo.classList.remove("active")
-    btnFour.classList.add("active")
+// btnFour.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     lgloves.classList.remove("active")
+//     bowl.classList.remove("active")
+//     modernSofa.classList.add("active")
+//     btnThree.classList.remove("active")
+//     btnOne.classList.remove("active")
+//     btnTwoo.classList.remove("active")
+//     btnFour.classList.add("active")
 
 
-})
+// })
+
+
+
+    
+
+   
+
+// btnOne.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     lgloves.classList.remove("active")
+//     bowl.classList.remove("active")
+//     bag.classList.remove("active")
+//     tshirt.classList.add("active")
+//     plates.classList.add("active")
+//     modernSofa.classList.add("active")
+//     bed.classList.add("active")
+//     shoes.classList.add("active")
+//     btnOne.classList.add("active")
+//     btnTwoo.classList.remove("active")
+//     btnThree.classList.remove("active")
+//     btnFour.classList.remove("active")
+
+    
+// })
+
+// btnTwoo.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     tshirt.classList.add("active")
+//     btnOne.classList.remove("active")
+//     btnThree.classList.remove('active')
+//     btnFour.classList.remove('active')
+//     btnTwoo.classList.add('active')
+// })
+
+
+// btnThree.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     lgloves.classList.remove("active")
+//     plates.classList.add("active")
+//     btnThree.classList.add("active")
+//     btnOne.classList.remove("active")
+//     btnTwoo.classList.remove("active")
+//     btnFour.classList.remove("active")
+    
+// })
+
+
+// btnFour.addEventListener("click",()=>{
+//     luxSofa.classList.remove("active")
+//     lgloves.classList.remove("active")
+//     bowl.classList.remove("active")
+//     modernSofa.classList.add("active")
+//     btnThree.classList.remove("active")
+//     btnOne.classList.remove("active")
+//     btnTwoo.classList.remove("active")
+//     btnFour.classList.add("active")
+
+
+// })
 
 
 
@@ -246,7 +309,69 @@ btnFour.addEventListener("click",()=>{
     
 // });
 
-
-
        
+let indicator = document.getElementsByClassName('indic');
 
+// je recupere toutes mes images
+let img = document.querySelectorAll('.img');
+console.log(img);
+// premier button
+    indicator[0].addEventListener('click',()=>{
+        // ici je change la position de mes image
+        // translateX = horizontal de gauche a droite
+        
+    img[0].style.transform = "translateX(0%)"
+    img[1].style.transform = "translateX(120%)"
+    // img[1].style.transform = "translateX(150%)"
+    img[2].style.transform = "translateX(240%)"
+    // img[2].style.transform = "translateX(300%)"
+    img[3].style.transform = "translateX(360%)"
+    // img[3].style.transform = "translateX(450%)"
+    img[4].style.transform = "translateX(480%)"
+    img[5].style.transform = "translateX(600%)"
+    img[6].style.transform = "translateX(720%)"
+})
+indicator[1].addEventListener("click",() =>{
+    // pareil je dois jouer avec les pourcentage
+    img[0].style.transform = "translateX(-120%)"
+    img[1].style.transform = "translateX(0%)"
+    img[2].style.transform = "translateX(120%)"
+    img[3].style.transform = "translateX(240%)"
+    img[4].style.transform = "translateX(360%)"
+    img[5].style.transform = "translateX(480%)"
+    img[6].style.transform = "translateX(600%)"
+
+})
+indicator[2].addEventListener("click",() =>{
+    img[0].style.transform = "translateX(-240%)"
+    img[1].style.transform = "translateX(-120%)"
+    img[2].style.transform = "translateX(0%)"
+    img[3].style.transform = "translateX(120%)"
+    img[4].style.transform = "translateX(240%)"
+    img[5].style.transform = "translateX(360%)"
+    img[6].style.transform = "translateX(480%)"
+
+}
+)
+indicator[3].addEventListener("click",() =>{
+    img[0].style.transform = "translateX(-360%)"
+    img[1].style.transform = "translateX(-240%)"
+    img[2].style.transform = "translateX(-120%)"
+    img[3].style.transform = "translateX(0%)"
+    img[4].style.transform = "translateX(120%)"
+    img[5].style.transform = "translateX(240%)"
+    img[6].style.transform = "translateX(360%)"
+
+}
+)
+indicator[4].addEventListener("click",() =>{
+    img[0].style.transform = "translateX(-480%)"
+    img[1].style.transform = "translateX(-360%)"
+    img[2].style.transform = "translateX(-240%)"
+    img[3].style.transform = "translateX(-120%)"
+    img[4].style.transform = "translateX(0%)"
+    img[5].style.transform = "translateX(120%)"
+    img[6].style.transform = "translateX(360%)"
+
+}
+)

@@ -1,136 +1,258 @@
-section
-    &:nth-of-type(4)
-        .bg-black
-            background-color: black
-            color: white
-        .titre3
-            text-align: center
-            font-weight: bold
-        .container    
-            .rowe
-                .card
-                    display: none
-                    height: 200px
-                    width: 250px
-                    transition: 0.5s
-                    cursor: pointer
-                    @media screen and (max-width: 620px)
-                        display: none
-                       
-                        
-                        
-                    
-                .active
-                    display: inline-block
-                    @media screen and (max-width: 620px)
-                        display: flex
-                        height: 200px
-                        width: 100px
-
+// section
+//     &:nth-of-type(4)
+//         .bg-black
+//             background-color: black
+//             color: white
+//         .titre3
+//             text-align: center
+//             font-weight: bold
+//         .container    
+//             .rowe
+                
+//                 .card
                    
-
-                   
-                    .hover-image
-                        margin: 10px
-                h5
-                    text-align: center
+//                     height: 200px
+//                     width: 250px
+//                     cursor: pointer
+//                     transition: all 2s
                     
-                .luxe-color
-                    color: $colorRed
-                    font-weight: bold
-                    text-align: center
+                    
+//                     @media screen and (max-width: 620px)
+//                         display: none 
+//                 .active
+//                     // display: inline-block
+//                     // transition: all 2s
+//                     @media screen and (max-width: 620px)
+//                         display: flex
+//                         height: 200px
+//                         width: 100px
+//                     .hover-image
+//                         margin: auto
+//                         position: absolute
+//                 h5
+//                     text-align: center
+                    
+//                 .luxe-color
+//                     color: $colorRed
+//                     font-weight: bold
+//                     text-align: center
                  
-                .butt-sale
-                    border-radius: 50%
-                    background-color: $colorRed
-                    height: 50px
-                    color: white
-                    border: none
-                .prix-gloves
-                    text-decoration: line-through
-                    opacity: 0.5
+//                 .butt-sale
+//                     border-radius: 50%
+//                     background-color: $colorRed
+//                     height: 50px
+//                     color: white
+//                     border: none
+//                 .prix-gloves
+//                     text-decoration: line-through
+//                     opacity: 0.5
                     
-                .prix
-                    color: $colorRed
-                    font-weight: bold
-                    align-items: center
-                .prix-bowl
-                    color: $colorRed
-                    font-weight: bold
-                h5
-                    text-align: center    
-                .sale-bag
-                    border-radius: 50%
-                    background-color: $colorRed
-                    height: 50px
-                    color: white
-                    border: none
-                .col-five
-                    display: none
-                    transition: 0.5s
-                    @media screen and (max-width: 620px)
-                        height: 60px
-                        width: 60px
+//                 .prix
+//                     color: $colorRed
+//                     font-weight: bold
+//                     align-items: center
+//                 .prix-bowl
+//                     color: $colorRed
+//                     font-weight: bold
+//                 h5
+//                     text-align: center    
+//                 .sale-bag
+//                     border-radius: 50%
+//                     background-color: $colorRed
+//                     height: 50px
+//                     color: white
+//                     border: none
+//                 .col-five
+//                     overflow: hidden
+//                     transition: 0.5s
+//                     position: relative
+//                     @media screen and (max-width: 620px)
+//                         height: 60px
+//                         width: 60px
                   
-                .active
-                    display: inline-block
+//                 .active
+//                     display: inline-block
+                  
                    
-                    @media screen and (max-width: 620px)
-                        display: block
+//                     @media screen and (max-width: 620px)
+//                         display: block
                         
-                .col-six
-                    display: none
-                .active
-                    display: inline-block
-                    @media screen and (max-width: 620px)
-                        display: block 
+//                 .col-six
+//                     overflow: hidden
+//                 .active
+//                     display: inline-block
+                   
+//                     @media screen and (max-width: 620px)
+//                         display: block 
                        
-                .col-seven
-                    display: none
+//                 .col-seven
+//                     overflow-x: hidden
+//                     transition: 0.5s
+//                     position: relative
 
-                .active 
-                    display: inline-block
-                    @media screen and (max-width: 620px)
-                        display: block
+//                 .active 
+//                     display: inline-block
+                    
+//                     @media screen and (max-width: 620px)
+//                         display: block
                         
-                .col-height
-                    display: none
-                .active
-                    display: inline-block
-                    @media screen and (max-width: 620px)
-                        display: block
+//                 .col-height
+//                     overflow: hidden
+//                      transition: 0.5s
+//                     position: relative
+//                 .active
+//                     display: inline-block
+                    
+//                     @media screen and (max-width: 620px)
+//                         display: block
 
-                .col-nine
-                    display: none  
-                .active 
-                    display: inline-block
-                    @media screen and (max-width: 620px)
-                        display: block                    
+//                 .col-nine
+//                     overflow: hidden
+//                 .active 
+//                     display: inline-block
+                  
+//                     @media screen and (max-width: 620px)
+//                         display: block                    
                     
             
-        .bouton-vide
+//         .bouton-vide
+//             display: flex
+//             justify-content: center
+//             align-items: center
+//             transform: translateY(50px)
+//             // height: 15px
+//             margin-top: 5%
+//             @media screen and (max-width: 620px)
+//                 margin-top: 30%
+            
+//         .active-all
+             
+//             border-radius: 50%
+//             height: 15px
+//             border: solid black 1px
+//             margin: 10px 
+//             animation: card 1s ease-in-out
+//             transition-duration: 1s
+//             &:hover
+//                 background: blue
+            
+//         .all
+//             border-radius: 50%
+//             height: 15px
+//             border: solid black 1px
+//             margin: 10px
+//             transition: 2s
+//             &:hover
+//                 background-color: blue
+
+#hotFashion
+    h2
+
+    // .bg-black
+    //     background-color: black
+    //     color: white
+    .container
+        .row
+            overflow-x: hidden
+            position: relative
+            margin: 0 auto
+            width: 100%
+            height: 500px
+            .img
+                left:3%
+                top: 20%
+                font-weight: 700
+                width: 21%
+                transition: 1s
+            .sofa
+                position: absolute
+                height: 25px
+                transition: 1s
+            .gloves
+                position: absolute
+                transform: translateX(120%)
+                height: 250px
+                transition: 1s
+            .bowl
+                position: absolute
+                transform: translateX(240%)
+                height: 250px
+                transition: 1s
+            .bags
+                position: absolute
+                transform: translateX(360%)
+                height: 250px
+                transition: 1s 
+            .tshirt
+                position: absolute
+                transform: translateX(500%)
+                height: 250px
+                transition: 1s 
+            .plate
+                position: absolute
+                transform: translateX(620%)
+                height: 250px
+                transition: 1s
+            .modern
+                position: absolute
+                transform: translateX(750%)
+                height: 250px
+                transition: 1s    
+
+        .divIndicators
+            // bottom: 20px
+            width: 100px
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 999
+            position: absolute
             display: flex
-            justify-content: center
+            justify-content: space-between
             align-items: center
-            transform: translateY(50px)
-            // height: 15px
-            margin-top: 5%
-            @media screen and (max-width: 620px)
-                margin-top: 30%
+            background-color: red
+            .indic
+                height: 15px
+                width: 15px
+                border: solid 1px black
+                border-radius: 50%       
+            .myIndicator1
+                cursor: pointer
+                border-radius: 50%
+                height: 15px
+            .myIndicator2
+                cursor: pointer
             
-        .active-all
-            background-color: blue 
-            border-radius: 50%
-            height: 15px
-            border: solid black 1px
-            margin: 10px 
-            animation: card 1s ease-in-out
-            transition-duration: 1s                             
-        
+            .myIndicator3
+                cursor: pointer
+            .myIndicator4
+                display: none
+            .myIndicator5
+                display: none
+                cursor: pointer
+            .myIndicator6
+                display: none
+                cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
-        .all
-            border-radius: 50%
-            height: 15px
-            border: solid black 1px
-            margin: 10px                              
+
+                                          
         

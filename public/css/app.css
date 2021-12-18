@@ -17244,6 +17244,11 @@ body {
   height: 100vh;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 header {
   width: 100%;
 }
@@ -17374,7 +17379,7 @@ header nav ul .connexion-btn .but-connect {
   text-transform: uppercase;
   transform: translateY(10px);
 }
-header nav .fas {
+header .menuBtn .fas {
   color: grey;
   background-color: white;
   font-size: 30px;
@@ -17385,48 +17390,47 @@ header nav .fas {
   display: none;
 }
 @media screen and (max-width: 620px) {
-  header nav .fas {
+  header .menuBtn .fas {
     display: block;
-    height: 30px;
+    font-size: 30px;
     float: left;
+    cursor: pointer;
+    margin-right: 40px;
   }
 }
-header nav .active {
+header .menuBtn .active {
   display: inline-block;
 }
 @media screen and (max-width: 680px) {
-  header nav .active {
+  header .menuBtn .active {
     display: inline-block;
   }
 }
-header nav .close-nav {
+header .menuBtn .close-nav {
   font-size: 30px;
   color: black;
   cursor: pointer;
   line-height: 80px;
   float: left;
-  display: none;
 }
 @media screen and (max-width: 620px) {
-  header nav .close-nav {
-    display: block;
+  header .menuBtn .close-nav {
+    display: flex;
     float: right;
   }
 }
-header nav .active {
-  display: block;
+header .menuBtn .active {
+  display: inline-block;
 }
 @media screen and (max-width: 680px) {
   header .Header-nav .ul-nav {
-    margin-right: 0 40px;
     position: absolute;
     width: 100%;
     left: 0;
-    top: 0;
     transition: all 2s;
     z-index: 1;
-    background-color: white;
     display: none;
+    background-color: white;
   }
   header .Header-nav .ul-nav .bg-black {
     background-color: black;
@@ -17592,6 +17596,17 @@ header .banniere .banniere-1 .butt-sale {
     display: inline-block;
     width: 100%;
   }
+}
+
+.flou {
+  display: none;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
 }
 
 .section-one {
@@ -18090,165 +18105,99 @@ section:nth-of-type(3) .text-bg button {
   border-radius: 5px;
 }
 
-section:nth-of-type(4) .bg-black {
-  background-color: black;
-  color: white;
+#hotFashion .container .row {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
 }
-section:nth-of-type(4) .titre3 {
-  text-align: center;
-  font-weight: bold;
+#hotFashion .container .row .img {
+  left: 3%;
+  top: 20%;
+  font-weight: 700;
+  width: 21%;
+  transition: 1s;
 }
-section:nth-of-type(4) .container .rowe .card {
-  display: none;
-  height: 200px;
-  width: 250px;
-  transition: 0.5s;
+#hotFashion .container .row .sofa {
+  position: absolute;
+  height: 25px;
+  transition: 1s;
+}
+#hotFashion .container .row .gloves {
+  position: absolute;
+  transform: translateX(120%);
+  height: 250px;
+  transition: 1s;
+}
+#hotFashion .container .row .bowl {
+  position: absolute;
+  transform: translateX(240%);
+  height: 250px;
+  transition: 1s;
+}
+#hotFashion .container .row .bags {
+  position: absolute;
+  transform: translateX(360%);
+  height: 250px;
+  transition: 1s;
+}
+#hotFashion .container .row .tshirt {
+  position: absolute;
+  transform: translateX(500%);
+  height: 250px;
+  transition: 1s;
+}
+#hotFashion .container .row .plate {
+  position: absolute;
+  transform: translateX(620%);
+  height: 250px;
+  transition: 1s;
+}
+#hotFashion .container .row .modern {
+  position: absolute;
+  transform: translateX(750%);
+  height: 250px;
+  transition: 1s;
+}
+#hotFashion .container .divIndicators {
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+#hotFashion .container .divIndicators .indic {
+  height: 15px;
+  width: 15px;
+  border: solid 1px black;
+  border-radius: 50%;
+}
+#hotFashion .container .divIndicators .myIndicator1 {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 15px;
+}
+#hotFashion .container .divIndicators .myIndicator2 {
   cursor: pointer;
 }
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .card {
-    display: none;
-  }
+#hotFashion .container .divIndicators .myIndicator3 {
+  cursor: pointer;
 }
-section:nth-of-type(4) .container .rowe .active {
-  display: inline-block;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .active {
-    display: flex;
-    height: 200px;
-    width: 100px;
-  }
-}
-section:nth-of-type(4) .container .rowe .active .hover-image {
-  margin: 10px;
-}
-section:nth-of-type(4) .container .rowe h5, section:nth-of-type(4) .container .rowe .h5 {
-  text-align: center;
-}
-section:nth-of-type(4) .container .rowe .luxe-color {
-  color: #B12A3B;
-  font-weight: bold;
-  text-align: center;
-}
-section:nth-of-type(4) .container .rowe .butt-sale {
-  border-radius: 50%;
-  background-color: #B12A3B;
-  height: 50px;
-  color: white;
-  border: none;
-}
-section:nth-of-type(4) .container .rowe .prix-gloves {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-section:nth-of-type(4) .container .rowe .prix {
-  color: #B12A3B;
-  font-weight: bold;
-  align-items: center;
-}
-section:nth-of-type(4) .container .rowe .prix-bowl {
-  color: #B12A3B;
-  font-weight: bold;
-}
-section:nth-of-type(4) .container .rowe h5, section:nth-of-type(4) .container .rowe .h5 {
-  text-align: center;
-}
-section:nth-of-type(4) .container .rowe .sale-bag {
-  border-radius: 50%;
-  background-color: #B12A3B;
-  height: 50px;
-  color: white;
-  border: none;
-}
-section:nth-of-type(4) .container .rowe .col-five {
-  display: none;
-  transition: 0.5s;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .col-five {
-    height: 60px;
-    width: 60px;
-  }
-}
-section:nth-of-type(4) .container .rowe .active {
-  display: inline-block;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .active {
-    display: block;
-  }
-}
-section:nth-of-type(4) .container .rowe .col-six {
+#hotFashion .container .divIndicators .myIndicator4 {
   display: none;
 }
-section:nth-of-type(4) .container .rowe .active {
-  display: inline-block;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .active {
-    display: block;
-  }
-}
-section:nth-of-type(4) .container .rowe .col-seven {
+#hotFashion .container .divIndicators .myIndicator5 {
   display: none;
+  cursor: pointer;
 }
-section:nth-of-type(4) .container .rowe .active {
-  display: inline-block;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .active {
-    display: block;
-  }
-}
-section:nth-of-type(4) .container .rowe .col-height {
+#hotFashion .container .divIndicators .myIndicator6 {
   display: none;
-}
-section:nth-of-type(4) .container .rowe .active {
-  display: inline-block;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .active {
-    display: block;
-  }
-}
-section:nth-of-type(4) .container .rowe .col-nine {
-  display: none;
-}
-section:nth-of-type(4) .container .rowe .active {
-  display: inline-block;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .container .rowe .active {
-    display: block;
-  }
-}
-section:nth-of-type(4) .bouton-vide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(50px);
-  margin-top: 5%;
-}
-@media screen and (max-width: 620px) {
-  section:nth-of-type(4) .bouton-vide {
-    margin-top: 30%;
-  }
-}
-section:nth-of-type(4) .active-all {
-  background-color: blue;
-  border-radius: 50%;
-  height: 15px;
-  border: solid black 1px;
-  margin: 10px;
-  animation: card 1s ease-in-out;
-  transition-duration: 1s;
-}
-section:nth-of-type(4) .all {
-  border-radius: 50%;
-  height: 15px;
-  border: solid black 1px;
-  margin: 10px;
+  cursor: pointer;
 }
 
 section:last-of-type {
